@@ -1,11 +1,11 @@
-package cal;
+package test.org.onelab.template.cal;
 
 import org.onelab.template.cal.Calculator;
 
 /**
  * @author Chunliang.Han on 2019-04-19.
  */
-public class CalDemo {
+public class TestCalculatorSpi {
 
   public static void main(String[] args) {
     Calculator calculator = new Calculator();

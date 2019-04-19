@@ -1,6 +1,4 @@
-package cal.spi;
-
-import org.onelab.template.cal.spi.Operator;
+package org.onelab.template.cal.spi;
 
 /**
  * 原子计算器的BigDecimal实现

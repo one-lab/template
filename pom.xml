@@ -13,6 +13,11 @@
         <module>lambda</module>
         <module>stream</module>
         <module>tmp</module>
-        <module>demo</module>
+        <module>cal-decimal</module>
+        <module>cal-simple</module>
     </modules>
+    <properties>
+        <maven.compiler.source>10</maven.compiler.source>
+        <maven.compiler.target>10</maven.compiler.target>
+    </properties>
 </project>

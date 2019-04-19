@@ -1,6 +1,4 @@
-package org.onelab.template.cal;
-
-import org.onelab.template.cal.spi.Operator;
+package org.onelab.template.cal.spi;
 
 import java.math.BigDecimal;
 
@@ -9,7 +7,7 @@ import java.math.BigDecimal;
  *
  * @author Chunliang.Han on 2019-03-21.
  */
-public class DefaultOperator implements Operator {
+public class BigDecimalOperator implements Operator {
 
   private static final String _0 = "0";
 
