@@ -13,5 +13,6 @@
         <module>lambda</module>
         <module>stream</module>
         <module>tmp</module>
+        <module>demo</module>
     </modules>
 </project>

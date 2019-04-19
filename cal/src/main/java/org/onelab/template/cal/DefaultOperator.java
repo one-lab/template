@@ -1,5 +1,7 @@
 package org.onelab.template.cal;
 
+import org.onelab.template.cal.spi.Operator;
+
 import java.math.BigDecimal;
 
 /**

@@ -1,6 +1,9 @@
 package org.onelab.template.cal;
 
+import org.onelab.template.cal.spi.Operator;
+
 import java.math.BigDecimal;
+import java.util.ServiceLoader;
 
 /**
  * 支持四则运算的计算器
@@ -23,16 +26,16 @@ public class Calculator {
   private Operator operator;
 
   public Calculator() {
-    this(DefaultOperator.class);
+    compiler = new Compiler();
+    ServiceLoader<Operator> operatorServiceLoader = ServiceLoader.load(Operator.class);
+    operator = operatorServiceLoader.findFirst().get();
   }
 
-  public Calculator(Class<? extends Operator> operatorClass) {
-    compiler = new Compiler();
-    try {
-      operator = operatorClass.newInstance();
-    } catch (Exception e) {
-      throw new RuntimeException(e);
+  public Class<? extends Operator> getOperatorClass(){
+    if (operator != null){
+      return operator.getClass();
     }
+    return null;
   }
 
   /**

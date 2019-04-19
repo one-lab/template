@@ -1,4 +1,4 @@
-package org.onelab.template.cal;
+package org.onelab.template.cal.spi;
 
 /**
  * 原子计算器
